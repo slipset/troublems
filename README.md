@@ -9,6 +9,28 @@ So, building with `scripts/release` the bug will appear for versions om-0.9.0
 This is broken for om-0.9.0 until om-1.0.0-alpha17, and the fix seems to have 
 appeared in 1.0.0-alpha18.
 
+
+In versions prior to 1.0.0-alpha18 under advanced compilation, this renders
+
+```
+0
+1
+2
+
+```
+
+whereas expected output would be
+
+```
+0 foo
+1 foo
+2 foo
+
+```
+
+which is what's rendered with versions 1.0.0-alpha18 and later.
+
+
 The diff between the two version:
 
 ```diff
